@@ -1,0 +1,22 @@
+CREATE DATABASE `apirestaurante` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
+CREATE TABLE `restaurante` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(100) DEFAULT NULL,
+  `tipo_comida` varchar(50) DEFAULT NULL,
+  `horario_abertura` time DEFAULT NULL,
+  `horario_fechamento` time DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+CREATE TABLE `usuarios` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(50) DEFAULT NULL,
+  `senha` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+INSERT INTO `apirestaurante`.`restaurante`
+(`id`,
+`nome`,
+`tipo_comida`,
+`horario_abertura`,
+`horario_fechamento`)
